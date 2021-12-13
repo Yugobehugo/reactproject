@@ -1,0 +1,11 @@
+.Cardcontainer{
+    width : 300px; 
+    height : 400px;
+    background: rgb(255, 186, 59);
+    border-radius : 8px;
+    margin-bottom : 20px;
+}
+.Cardimg{
+    width : 300px !important;
+    height : auto !important;
+}
