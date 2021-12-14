@@ -1,9 +1,10 @@
 .Cardcontainer{
     width : 300px; 
     height : 400px;
-    background: rgb(255, 186, 59);
+    background: rgb(255, 255, 255);
     border-radius : 8px;
     margin-bottom : 20px;
+    box-shadow: 8px 5px 5px rgb(42, 42, 42);
 }
 .Cardimg{
     width : 300px !important;

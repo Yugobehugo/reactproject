@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Navbar.module.css'
 
+
 export default function Navbar() {
     const [user, setUser] = useState(null);
    
@@ -8,6 +9,7 @@ export default function Navbar() {
         <div className={styles.Navcontainer}>
           <h1>NFT Marketplace</h1>
           <p>Menu</p>
+          <a href = "/toto">test</a>
           <div>
               { user ? (
                   <button>LOGIN</button>

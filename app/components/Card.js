@@ -1,9 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import styles from '../styles/Card.module.css'
+import {useRouter} from 'next/router'
 
 export default function Card(props) {
     const [user, setUser] = useState(null);
+    const [selected, setSelected] = useState(null);
+
+    useEffect(() => {
+        console.log(selected)
+
+    }, [selected]);
+    const router = useRouter()
+
+    const gotoproductpage = (name) => {
+        router.push(props.title)
+    }
    
     return (
         <div className={styles.Cardcontainer}>
@@ -15,7 +27,7 @@ export default function Card(props) {
         <p>{props.desc}</p>
         <h2>{props.price} euros</h2>
 
-        <button>Acheter</button>
+        <button onClick={() => gotoproductpage(props.title)}>Acheter</button>
     </div>
     )
 }
